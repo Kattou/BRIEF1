@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="">
+  <meta charset="utf-8">
+  
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
+  <script href="carrousel.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>WeLikeFood</title>
+ 
+</head>
+<body>
+
+<!-- code css du swiper -->
+
+  <style>
+    
+
+    .swiper {
+      width: 120%;
+      height: 100%;
+      background-color:transparent;
+      margin-top: -10px;
+
+    }
+
+    .swiper-slide {
+      border: 1px solid #0984a0;
+      border-radius: 15px;
+      height: 40px;
+      width: 130px;
+      display: inline-block;
+      list-style-type: none;
+
+    
+    
+
+    }
+
+    
+    .swiper-button-next,
+    .swiper-button-prev{
+     color: black;
+     position: absolute;
+     top: 210px;
+     width: 35px;
+      
+     
+    }
+    .box-img
+    {
+     width: 100%;
+      
+     background-color: transparent;
+     display: flex;
+    }
+    </style>
+             <!-- fin de code swiper -->
+
+
+
+
+             <!-- partir navigateur -->
+        <div class="container" >
+        <div class="galle" style="margin:20px; display:flex; margin-bottom:25px">
+        <a href="" class="navbar-brand">
+        <img src="img/microsoftt.jpg" alt="logo" width="150px" height="22px" style="margin-left:-90px; margin-top:5px;">
+        </a>
+          
+        <input type="search" name="search" class="search" value="NOURRITURE" id="" style="width:600px; height:52px;margin-right:160px;margin-left:10px;border: 3px solid white; border-radius:20px;box-shadow:2px 2px 2px 2px rgb(229,226,226); " >
+        <div class="iconVoix">
+        <a href=""><div>
+        <span class="iconify" style="color:cornflowerblue ;" data-icon="ic:outline-keyboard-voice"></span>
+        </div></a> 
+        <a href="">
+        <div><span class="iconify" style="color:cornflowerblue ;" data-icon="fluent:search-visual-20-filled"></span> </div></a>
+        <a href=""><div>  <span class="iconify" style="color:cornflowerblue ;" data-icon="radix-icons:magnifying-glass"></span></div></a>
+        </div>
+        
+        <div class="espace" style="margin-top:2px; margin-left: 7px;"> <button type="submit"  style="height:40px; width:100px;margin-right:50px;  ">Connexion</button></div>
+         
+   <!-- menu hamburger -->
+  
+   <a href="#" id="openBtn">
+    <span class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      </span>
+      </a>
+  <!-- fin menu hamburger -->
+
+<i class="fas fa-bars"></i>
+<div class="espace"> 
+
+
+   <!--  debut menu  -->
+  
+   <a href="#" id="openBtn"    >
+   <span class="burger-icon">
+   <span></span>
+   <span></span>
+   <span></span>
+   </span>
+  </a>
+   <!-- fin menu -->
+</div>
+</div>
+                                                                                              
+    <nav class="navbar" >
+      
+        <ul class="nav navbar-nav">
+          <li ><a href="#"class="menus">TOUT</a></li>
+          <li><a href="#" class="menus">VIDEOS</a></li>
+          <li><a href="#" class="menus">IMAGES</a></li>
+          <li><a href="#" class="menus">CARTES</a></li>
+          <li><a href="#" class="menus">ACTUALITES</a></li>
+    
+        </ul>
+       
+         <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="menus" style="margin-right:40px ; ">Filtre <span class="iconify" data-icon="carbon:filter"></span></a></li>
+           </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle"><p class="menus">Filtre Adulte:</p>
+                  </a>
+                  <ul class="dropdown-menu">
+                  
+                  </ul>
+                </li> 
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong class="menus">Modéré</strong>
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle"><p class="menus">Filtre de Page:</p>
+              </a>
+              <ul class="dropdown-menu">
+              
+              </ul>
+            </li> 
+
+          
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong class="menus">Automatique</strong>
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+             
+            </ul>
+          </li>
+        </ul>   
+    </nav>      
+    
+    <!-- ligne droite -->
+
+  <hr width="100%"   >
+  <!-- code swiper avec les ronds -->
+
+  <div class="box-img">
+       <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        
+         <div class="swiper-slide" > 
+        
+  <a href="#" >
+    <div class="gallery">
+   
+  <img src="img/IMm.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px" ><p style="margin-top:-30px;margin-left: 30px;color: black;">Nourriture <br> <strong>Chat</strong></p>
+  
+
+</div>
+</a></div>
+<div class="swiper-slide">
+  <a href="#">
+   <div class="gallery">
+    <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px; color: black;"><strong>Bonne      <br>  </strong>Nourriture  </p>
+        
+  
+      </div>
+    </a> </div>  
+
+    <div class="swiper-slide">
+    <a href="#">
+    <div class="gallery">
+        <img src="img/imm3.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;">Nourriture<strong><br>Fast-Food</strong> </p>
+    </div>
+  </a></div>
+
+  <div class="swiper-slide">
+   <a href="#">
+    <div class="gallery">
+        <img src="img/imm4.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+    
+    </div>
+  </a> </div>
+
+
+         
+  <div class="swiper-slide" > 
+        
+    <a href="#" >
+      <div class="gallery">
+     
+    <img src="img/IMm.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px" ><p style="margin-top:-30px;margin-left: 30px;color: black;">Nourriture <br> <strong>Chat</strong></p>
+    
+  
+  </div>
+  </a></div>
+  <div class="swiper-slide">
+    <a href="#">
+     <div class="gallery">
+      <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px; color: black;"><strong>Bonne      <br>  </strong>Nourriture  </p>
+          
+    
+        </div>
+      </a> </div> 
+  
+
+  
+  <div class="swiper-slide">
+    <a href="#">
+     <div class="gallery">
+         <img src="img/imm5.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+     
+    </div>
+  </a> </div>
+
+  <div class="swiper-slide">
+    <a href="#">
+     <div class="gallery">
+         <img src="img/imm6.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+     
+      </div>
+    </a> </div>
+
+    
+  <div class="swiper-slide">
+    <a href="#">
+     <div class="gallery">
+         <img src="img/imm7.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+     
+  </div>
+  </a> </div>
+
+  <div class="swiper-slide">
+    <a href="#">
+     <div class="gallery">
+         <img src="img/imm8.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+     
+        </div> 
+      </a></div>
+
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm3.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm4.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm6.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm3.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm4.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm5.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm7.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm3.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          <div class="swiper-slide">
+            <a href="#">
+             <div class="gallery">
+                 <img src="img/imm6.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+             
+                </div> 
+              </a></div>
+
+              
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm6.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+
+
+
+
+
+
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm2.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+          
+      <div class="swiper-slide">
+        <a href="#">
+         <div class="gallery">
+             <img src="img/imm3.jpg" alt="" class="formImage" width="25px" height="28px" style="margin-left:5px"><p style="margin-top:-30px;margin-left:30px;color: black;"><strong>Italie</strong><br>Nourriture</p>
+         
+            </div> 
+          </a></div>
+
+
+
+  
+
+
+
+
+                   <!-- les icon -->
+   <span class="iconify" style="float:right;margin-right:-300px;margin-top:10px;color: #000;width: auto
+    ;" data-icon="dashicons:arrow-right-alt2" data-width="120" data-height="20"></span>
+  </div> 
+  </a></div> 
+  
+  </a>
+  <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+       
+    </div></div>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 8,
+    spaceBetween: 4,
+    slidesPerGroup: 8,
+    loop: false,
+    loopFillGroupWithBlank: false,
+   
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+ <!-- fin code swiper avec les ronds -->
+
+          <!-- deuxieme partie -->
+    <b style="margin-top: 50px;margin-left:-1215px;">
+        <div class="gallery6">
+                <div class="cor1">
+                <div class="contairer">
+              <span id="enis"> <a href="#"><img class="mmm" src="img/imgee15.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+           <div id="val" > <a href=""><p style="color:rgb(255, 253, 253) ;">246 X 168 jpg-MaximumWall</p></a></div>
+              </div>
+            </div>
+           <a href=""> <div class="desc" style=" text-decoration: none;">Wallpapers Nourriture Allemande - MaximumWall</div></a>
+        </a>
+          </div>
+        </b>
+
+        <b style="margin-top: 50px;">
+          <div class="gallery6">
+            <div class="cor1">
+            <div class="contairer">
+          <span id="enis"> <a href="#"><img class="mmm" src="img/imgee2.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+       <div id="val"><a href=""><p style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+          </div>
+        </div>
+           <a href=""><div class="desc">Télécharger fonds d'écran nourriture gratuitement</div></a> 
+        </a>
+          </div>
+          </b>
+
+          <b style="margin-top: 50px;">
+            <div class="gallery6">
+              <div class="cor1">
+              <div class="contairer">
+            <span id="enis"> <a href="#"><img class="mmm" src="img/imgee3.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+         <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+            </div>
+          </div>
+        
+            <a href=""><div class="desc">La nourriture bio, bonne pour la santé? - Pieuvre.ca</div></a>  
+        </a>
+          </div>
+        </b>
+
+        <b style="margin-top: 50px;">
+          <div class="gallery6">
+            <div class="cor1">
+            <div class="contairer">
+          <span id="enis"> <a href="#"><img class="mmm" src="img/imgee4.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+       <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+          </div>
+        </div>
+          
+           <a href=""> <div class="desc">J’ai mangé de la nourriture pour animaux - URBANIA</div></a>
+        </a>
+          </div>
+        </b>
+
+        <b style="margin-top: 50px;">
+          <div class="gallery6">
+            <div class="cor1">
+            <div class="contairer">
+          <span id="enis"> <a href="#"><img class="mmm" src="img/imgee5.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+       <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+          </div>
+        </div>
+            
+             <a href=""><div class="desc">Télécharger fonds d'écran nourriture gratuitement</div></a> 
+            </a>
+            </div>
+          </b>
+
+          <br><br><br>
+
+          <b style="margin-top: 320px;margin-left:-1350px;">
+  <div class="gallery6">
+                <div class="cor1">
+                <div class="contairer">
+              <span id="enis"> <a href="#"><img class="mmm" src="img/imgee6.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+           <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+              </div>
+            </div>
+       
+      <a href=""> <div class="desc">Aliments nourriture assortis en lot de 24 en Plastique soufflé ...</div></a>
+</a>
+     </div>
+    </b>
+
+ <b style="margin-top: 320px;">
+  <div class="gallery6">
+    <div class="cor1">
+    <div class="contairer">
+  <span id="enis"> <a href="#"><img class="mmm" src="img/imgee7.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+     <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+  </div>
+</div>
+ <a href=""><div class="desc"><p></p><p> Nourriture - Page 29</p></div></a>
+
+</a>
+</div>
+  </b>
+<b style="margin-top: 320px;">
+  <div class="gallery6">
+    <div class="cor1">
+    <div class="contairer">
+  <span id="enis"> <a href="#"><img class="mmm" src="img/imgee8.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+<div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+  </div>
+</div>
+
+ <a href=""><div class="desc">Délices culinaires - la nourriture asiatique e…</div></a>
+ 
+</a>
+</div>
+ </b>
+ <b style="margin-top: 320px;">
+  <div class="gallery6">
+    <div class="cor1">
+    <div class="contairer">
+  <span id="enis"> <a href="#"><img class="mmm" src="img/imgee9.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+<div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+  </div>
+</div>
+ 
+ <a href=""><div class="desc">Télécharger fonds d'écran nourriture gratuitement</div></a>
+</a>
+</div>
+ </b>
+<b style="margin-top: 320px;">
+                           
+  <div class="gallery6">
+    <div class="cor1">
+    <div class="contairer">
+  <span id="enis"> <a href="#"><img class="mmm" src="img/imgee10.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+<div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+  </div>
+</div>
+<a href=""> <div class="desc">Nourriture déshydratée : Quels avantages ? - Devenir survialiste</div></a>
+</a>
+ </div>
+ </b>
+
+
+ 
+ <b style="margin-top: 590px;margin-left:-1350px;">
+  <div class="gallery6">
+    <div class="cor1">
+      <div class="contairer">
+    <span id="enis"> <a href="#"><img class="mmm" src="img/imgee11.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+  <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+    </div>
+  </div>
+     <a href=""> <div class="desc">Wallpapers Nourriture Indienne - MaximumWall</div></a>
+  </a>
+    </div>
+  </b>
+
+  <b style="margin-top: 590px;">
+    <div class="gallery6">
+      <div class="cor1">
+        <div class="contairer">
+      <span id="enis"> <a href="#"><img class="mmm" src="img/imgee12.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+    <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+      </div>
+    </div>
+      <a href=""><div class="desc"> <p></p><p> Nourriture - Page 29</p></div></a>
+  </a>
+    </div>
+    </b>
+
+    <b style="margin-top: 590px;">
+    <div class="gallery6">
+      <div class="cor1">
+        <div class="contairer">
+      <span id="enis"> <a href="#"><img class="mmm" src="img/imgee13.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+    <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+      </div>
+    </div>
+      <a href=""><div class="desc">Pourquoi on aime tant la nourriture américaine ? - Charliebirdy</div></a>
+  </a>
+    </div>
+  </b>
+  <b style="margin-top: 590px;">
+    <div class="gallery6">
+      <div class="cor1">
+        <div class="contairer">
+      <span id="enis"> <a href="#"><img class="mmm" src="img/imgee14.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+    <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+      </div>
+    </div>
+        <a href=""><div class="desc">J’ai mangé de la nourriture pour animaux - URBANIA</div></a>
+  </a>
+    </div>
+  </b>
+  <b style="margin-top: 590px;">
+    <div class="gallery6">
+      <div class="cor1">
+        <div class="contairer">
+      <span id="enis"> <a href="#"><img class="mmm" src="img/imgee15.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+    <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+      </div>
+    </div>
+        <a href=""><div class="desc">Télécharger fonds d'écran nourriture gratuitement</div></a>
+      </a>
+      </div>
+    </b>
+    
+    <b style="margin-top: 860px;margin-left:-1620px;">
+      <div class="gallery6">
+        <div class="cor1">
+          <div class="contairer">
+        <span id="enis"> <a href="#"><img class="mmm" src="img/imgee7.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+      <div id="val"><a class="" href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+        </div>
+      </div>
+ 
+<a href=""><div class="desc">Aliments nourriture assortis en lot de 24 en Plastique soufflé ...</div></a>
+</a>
+</div>
+</b>
+
+<b style="margin-top: 860px;">
+  <div class="gallery6">
+    <div class="cor1">
+      <div class="contairer">
+    <span id="enis"> <a href="#"><img class="mmm" src="img/imgee17.jpg" alt="Cinque Terre" ></a></span>
+  <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+    </div>
+  </div>
+
+ <a href=""> <div class="desc">Délices culinaires- la nourriture asiatique en 80 photos délicieuses</div></a>
+
+</a>
+</div>
+</b>
+<b style="margin-top: 860px;">
+  <div class="gallery6">
+    <div class="cor1">
+      <div class="contairer">
+    <span id="enis"> <a href="#"><img class="mmm" src="img/imgee21.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+  <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+    </div>
+  </div>
+<a href=""><div class="desc">Délices culinaires - la nourriture asiatique e…</div></a>
+
+</a>
+</div>
+</b>
+<b style="margin-top: 860px;">
+  <div class="gallery6">
+    <div class="cor1">
+      <div class="contairer">
+    <span id="enis"> <a href="#"><img class="mmm" src="img/imgee19.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+  <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+    </div>
+  </div>
+<a href=""><div class="desc">Télécharger fonds d'écran nourriture gratuitement</div></a>
+</a>
+</div>
+</b>
+<b style="margin-top: 860px;">
+                     
+  <div class="gallery6">
+    <div class="cor1">
+      <div class="contairer">
+    <span id="enis"> <a href="#"><img class="mmm" src="img/imgee20.jpg" alt="Cinque Terre" width="800" height="300"></a></span>
+  <div id="val"><a href=""><p  style="color:rgb(255, 253, 253);">246 X 168 jpg-MaximumWall</p></a></div>
+    </div>
+  </div>
+
+<a href=""><div class="desc">Nourriture déshydratée : Quels avantages ? - Devenir survialiste</div></a>
+</a>
+</div>
+</b>
+
+<!-- <b style="margin-top: 860px;">
+                     
+                     
+  <div class="gallery6"> <a class="_blank" href="img/imge10.jpg">
+  <img src="img/imge10.jpg" alt="Mountains" width="600" height="400">
+  
+  <div class="desc">Nourriture déshydratée : Quels avantages ? - Devenir survialiste</div>
+  </a>
+  </div>
+  </b> -->
+                      <!-- partie commentaire -->
+  <div class="bloc10">
+    <a class="tab" href="#">
+        <img class="" src="./img/ytiieusXgM2K8bLkEDP-AS1ePds.png">
+        Commentaires
+    </a>
+</div>
+         
+
+   <!-- le pied du la page -->
+   <footer>
+    <nav>
+        <ul class="foo">
+        <li><a href="#">confidentialite et cookie</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Passer une annonce</a></li>
+        <li><a href="#">Aide</a></li>
+        <li><a href="#"> Votre Avis</a></li>
+        </ul>
+    </nav>
+    <p class="cop">&copy</p>
+ </footer>
+
+
+
+
+</body>
+</html>
